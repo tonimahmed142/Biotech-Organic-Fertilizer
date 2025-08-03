@@ -196,6 +196,54 @@ main {
     color: #666;
 }
 
+.product_packege-organic-fertilizer{
+    background:url('./assets/organic-fertilizer.JPG') center/cover;
+    position: relative;
+    margin-top: 20px;
+    min-height: 300px;
+    min-width: 150px;
+    align-content: center;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+}
+.product_packege-vermicompost{
+    background:url('./assets/vermicompost-img.JPG') center/cover;
+    position: relative;
+    margin-top: 20px;
+    min-height: 300px;
+    min-width: 150px;
+    align-content: center;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+}
+.sould_out > h3{
+    color: red;
+}
+.sould_out{
+    align-content: center;
+    height: 70px;
+    width: 100%;
+    background-color: #15911141;
+}
+.vermicompost_buy_now{
+    margin-top: 10px;
+    background-color: #1ec463;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    width: 50%;
+    height: 50px;
+    cursor: pointer;
+}
+.contact-link{
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 10px;
+    text-decoration: none;
+}
+.contact-link:hover{
+    box-shadow: 0.5px 0.5px 5px #1ec463;
+}
 .learn-more-btn {
     background-color: #27ae60;
     color: white;
