@@ -97,12 +97,12 @@ body {
 
 /* Main Content */
 main {
-    margin-top: 80px; /* Account for fixed navbar */
+    margin-top: 60px; /* Account for fixed navbar */
 }
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(46, 204, 113, 0.8), rgba(39, 174, 96, 0.5)), 
+    background: linear-gradient(rgba(46, 204, 113, 0.1), rgba(39, 174, 96, 0.1)), 
                 url('https://images.unsplash.com/photo-1523741543316-beb7fc7023d8?ixlib=rb-4.0.3') center/cover;
     height: 100vh;
     display: flex;
@@ -189,6 +189,96 @@ main {
     font-size: 1.5rem;
     margin-bottom: 1rem;
     color: #2c3e50;
+}
+
+.product-card p {
+    margin-bottom: 1.5rem;
+    color: #666;
+}
+
+.learn-more-btn {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.learn-more-btn:hover {
+    background-color: #2ecc71;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(39, 174, 96, 0.3);
+}
+
+/* Team Section */
+.team-section {
+    margin-top: 4rem;
+}
+
+.team-section h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: #2c3e50;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.team-member {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+}
+
+.member-image {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(135deg, #2ecc71, #27ae60);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+}
+
+.member-image i {
+    font-size: 2.5rem;
+    color: white;
+}
+
+.team-member h4 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+}
+
+.team-member .position {
+    font-size: 1rem;
+    color: #27ae60;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.team-member .bio {
+    color: #666;
+    line-height: 1.6;
+    font-size: 0.95rem;
 }
 
 /* Services Grid */
@@ -316,7 +406,8 @@ main {
     
     /* Grid Mobile */
     .products-grid,
-    .services-grid {
+    .services-grid,
+    .team-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
